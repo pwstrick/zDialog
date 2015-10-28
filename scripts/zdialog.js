@@ -32,7 +32,7 @@
         layer:true, //是否显示阴影层
         zIndex:9999, //z-index属性
         
-        onshow:function(){}//打开弹出框的时候触发
+        onshow:function(){},//打开弹出框的时候触发
         onclose:function(){}//关闭事件的时候触发
     };
     
