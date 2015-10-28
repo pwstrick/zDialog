@@ -1,0 +1,39 @@
+.zdialog {}
+.zdialog .zdialog-layer {
+	background: rgba(0,0,0,.6);
+	position: fixed;
+	width: 100%;
+	z-index: 100;
+	top: 0;
+	left: 0;
+	bottom: 0;
+}
+.zdialog .zdialog-content{
+  text-align: center;
+  box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.5);
+  background-color: #fff;
+  -webkit-border-radius: 20px;
+     -moz-border-radius: 20px;
+          border-radius: 20px;
+         position: fixed;/*原先是absolution*/
+         top: 30%;
+         left:5%;
+         right: 5%;
+         z-index: 999;
+         color: #666;
+}
+.zdialog .alert-content .cancel{color:#ccc;}
+.zdialog .alert-content div{padding:35px 10px;color:#666666;
+    font-size:18px;
+    border-bottom:1px solid #e5e5e5;
+    margin-bottom:0;
+}
+.alert .alert-content div:last-child{
+	border-bottom:0;
+}
+.alert .alert-content a{
+	font-size: 24px;
+}
+.alert .alert-content a:focus{
+	text-decoration:none;
+}
