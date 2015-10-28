@@ -3,12 +3,24 @@
 	<head>
 		<meta charset="utf-8" />
 		<title>zdialog</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+		<!-- 仅用于布局-->
+		<link rel="stylesheet" href="styles/demo.css" />
 		<link rel="stylesheet" href="styles/zdialog.css" />
 		<script src="scripts/zepto/zepto.js"></script>
 		<script src="scripts/zepto/touch.js"></script>
 		<script src="scripts/zdialog.js"></script>
 	</head>
 	<body>
-		demo2
+		<aside class="zdialog">
+			<div class="zdialog-layer"></div>
+			
+		</aside>
+		<script>
+			//console.log($.fn.zDialog)
+			var di = new zDialog();
+			console.log(di);
+			
+		</script>
 	</body>
 </html>
