@@ -50,6 +50,7 @@
         
         left: "5%",
         right: "5%",//用left和right替代width宽度 因为手机屏幕不一样
+        top: null,
         
         ok: function() {},//点击确定触发事件 false就不显示
         okValue: "确定",//确定文字
@@ -116,14 +117,26 @@
             }
         },
         position: function () {//位置计算
-			var $window = $(window);
-	        var fixed = this.fixed;
-	        var dt = fixed ? 0 : $('body').scrollTop();//zepto需要这么做
-	        var wh = $window.height();
-	        var oh = this.$content.height();
-	        var top = (wh - oh) * 382 / 1200 + dt;// 黄金比例
-	        top = Math.max(parseInt(top), dt);
-			this.$content.css({top:top});
+        	var top = this.options.top;//已自定义高度
+        	var fixed = this.options.fixed;
+        	if(top == null) {//未设置值
+        		if(fixed === true) {
+        			top = '40%';//直接写死 下面的计算会出问题
+        		}else {
+        			var $window = $(window);
+			        var dt = $('body').scrollTop();//zepto需要这么做
+			        var wh = $window.height();
+			        var oh = this.$content.height();
+			        var top = (wh - oh) * 382 / 1200 + dt;// 黄金比例
+			        top = Math.max(parseInt(top), dt);
+        		}
+        	}
+        	this.$content.css('top', top);
+        	if(fixed === true) {//fixed定位
+        		this.$content.css('position', 'fixed');
+        	}
+        	
+			
         },
         layer: function() {//阴影层操作
         	var screen = window.screen.height;//屏幕高度
