@@ -6,9 +6,10 @@
 - resource中的图片文件就一张二维码图片，仅仅用于扫描
 - styles/demo.css文件仅仅是页面布局CSS
 
-<a href="http://pwstrick.github.io/zdialog/" target="_blank">点击查看在线demo</a>
 ## 移动端展示
 ![二维码](http://pwstrick.github.io/zdialog/resource/qrcode.png) 
+
+Demo [http://pwstrick.github.io/zdialog](http://pwstrick.github.io/zdialog)
 
 <table width="100%">
   <thead>
