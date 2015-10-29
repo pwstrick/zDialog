@@ -12,19 +12,36 @@
 		<script src="scripts/zdialog.js"></script>
 	</head>
 	<body>
+		<h4>按钮事件</h4>
+		<a href="#" id="dialog1">点击触发按钮事件</a>
+		<!--
 		<aside class="zdialog">
 			<div class="zdialog-layer"></div>
 			<div class="zdialog-content">
-				<div>请输入正确的手机格式</div>
+				<div class="zdialog-message">请输入正确的手机格式</div>
 				<button type="button" class="btn btn-primary">确定</button>
 				<button type="button" class="btn">取消</button>
 			</div>
 		</aside>
+		-->
 		<script>
-			//console.log($.fn.zDialog)
-			var di = new zDialog();
-			console.log(di);
+			//1
 			
+			$('#dialog1').click(function() {
+				var ok1Fn = function() {
+					alert('click确定按钮');
+				};
+				var cancel1Fn = function() {
+					dialog1.close();
+				};
+				var dialog1 = zDialog.getzDialog({ok:ok1Fn, cancel:cancel1Fn, content:'信息内容'});
+				dialog1.open();
+			});
+			
+			
+			//var dialog2 = zDialog.getzDialog({ok:ok1Fn, cancel:cancel1Fn});
+			
+			//
 		</script>
 	</body>
 </html>

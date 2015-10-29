@@ -1,11 +1,14 @@
-.zdialog .zdialog-layer {
-	background: rgba(0,0,0,.6);
+.zdialog-layer {
+	background: rgb(0,0,0);
 	position: fixed;
 	width: 100%;
 	z-index: 999;
 	top:0;
 	left:0;
 	bottom:0;
+}
+.zdialog{
+	display:none;
 }
 .zdialog .zdialog-content{
   z-index:9999;
@@ -18,10 +21,7 @@
   background-color:#fff;
   -webkit-border-radius:20px;
           border-radius:20px;
-         position:fixed;/*原先是absolute*/
-         top:30%;
-         left:5%;
-         right:5%;
+         position:absolute;
 }
 .zdialog .zdialog-content div{
 	padding:35px 10px;
