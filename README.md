@@ -8,7 +8,17 @@
 <p>手机可直接扫描下面二维码查看demo</p>
 ![二维码](http://pwstrick.github.io/zdialog/resource/qrcode.png) 
 
-表格
-|_. ID |_.表名 |
-| 1 | 项目1 |
-| 2 | 项目2 |
+<table>
+  <thead>
+    <tr>
+        <td width="20%">参数</td>
+        <td width="20%">取值</td>
+        <td width="60%">简介</td>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+        <td>Foo</td>
+    </tr>
+ </tbody>
+</table>
