@@ -8,12 +8,12 @@
 <p>手机可直接扫描下面二维码查看demo</p>
 ![二维码](http://pwstrick.github.io/zdialog/resource/qrcode.png) 
 
-<table style="width:100%">
+<table width="100%">
   <thead>
     <tr>
-        <th style="width:20%">参数</th>
-        <th style="width:20%">取值</th>
-        <th style="width:60%">简介</th>
+        <th width="20%">参数</th>
+        <th width="20%">取值</th>
+        <th width="60%">简介</th>
     </tr>
   </thead>
   <tbody>
