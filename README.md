@@ -116,6 +116,9 @@ var islider = new zDialog();
         <td>模版内容</td>
     </tr>
     <tr>
+        <td colspan="4"></td>
+    </tr>
+    <tr>
         <td colspan="4"><b>外观配置</b></td>
     </tr>
     <tr>
@@ -144,6 +147,9 @@ var islider = new zDialog();
         <td>{boolean}</td>
         <td>false</td>
         <td>消息主体浮动类型设置为：position:fixed</td>
+    </tr>
+    <tr>
+        <td colspan="4"></td>
     </tr>
     <tr>
         <td colspan="4"><b>按钮配置</b></td>
@@ -239,6 +245,9 @@ var islider = new zDialog();
         <td>{boolean}</td>
         <td>false</td>
         <td>开启或关闭调试</td>
+    </tr>
+    <tr>
+        <td colspan="4"></td>
     </tr>
     <tr>
         <td colspan="4"><b>事件配置</b></td>
