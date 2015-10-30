@@ -188,7 +188,11 @@ var islider = new zDialog();
         <td>[]</td>
         <td>自定义按钮数组
         [
-          {value:按钮内容, callback:回调函数, css:按钮样式}
+          {
+             value:按钮内容,
+             callback:回调函数,
+             css:按钮样式
+          }
         ]
         </td>
     </tr>
