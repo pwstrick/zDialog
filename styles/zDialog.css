@@ -61,3 +61,9 @@
 .zdialog .zdialog-content .btn-primary {
 	background:#337ab7;
 }
+.zdialog .zdialog-content .btn-success {
+	background:#5bb75b;
+}
+.zdialog .zdialog-content .btn-warning {
+	background:#faa732;
+}

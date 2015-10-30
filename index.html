@@ -12,13 +12,76 @@
 		<script src="scripts/zDialog.js"></script>
 	</head>
 	<body>
-		<h4>按钮事件</h4>
-		<a href="#" id="dialog1">点击触发按钮事件</a>
+		<p>点击空白处就可关闭弹出框</p>
+		<section>
+			<h3>1、内容设置</h3>
+			<a href="javascript:void(0)" id="dialog1_1">文本内容</a>
+			<a href="javascript:void(0)" id="dialog1_2">标签内容</a>
+			<pre>
+				<code>
+var options1_1 = {content:'这是弹框文本内容'};
+var options1_2 = {content:'< p style="color:red">这是标签内容</ p>'};</code>
+			</pre>
+		</section>
+		<section>
+			<h3>2、位置设置</h3>
+			<a href="javascript:void(0)" id="dialog2_1">左右修改</a>
+			<a href="javascript:void(0)" id="dialog2_2">top设置</a>
+			<a href="javascript:void(0)" id="dialog2_3">fixed</a>
+			<pre>
+				<code>
+var options2_1 = {left:'20%', right:'20%'};
+var options2_2 = {top:'20%'};
+var options2_3 = {fixed:true};</code>
+			</pre>
+		</section>
+		<section>
+			<h3>3、按钮设置</h3>
+			<a href="javascript:void(0)" id="dialog3_1">确定按钮</a>
+			<a href="javascript:void(0)" id="dialog3_2">取消按钮</a>
+			<a href="javascript:void(0)" id="dialog3_3">按钮组</a>
+			<pre>
+				<code>
+var okFn = function(){alert('点击出现确定')};
+var options3_1 = {ok:okFn, okValue:'点击出现确定', okCSS:'btn'};</code>
+				<code>
+var cancelFn = function(){dialog.close()};
+var options3_2 = {cancel:cancelFn, cancelValue:'点击关闭弹框', cancelCSS:'btn btn-primary'};</code>
+				<code>
+var btns = [
+	{value:'按钮1',callback:function(){alert('按钮1')},css:'btn btn-success'},
+	{value:'按钮2',callback:function(){alert('按钮2')},css:'btn btn-warning'}
+];
+var options3_3 = {buttons:btns};</code>
+			</pre>
+		</section>
+		<section>
+			<h3>4、交互设置</h3>
+			<a href="javascript:void(0)" id="dialog4_1">快速关闭</a>
+			<a href="javascript:void(0)" id="dialog4_2">阴影透明</a>
+			<a href="javascript:void(0)" id="dialog4_3">点击事件</a>
+			<pre>
+				<code>
+var options4_1 = {quickClose:false, content:'点击外面关闭不了了'};
+var options4_2 = {opacity:0.2, content:'阴影变淡了'};
+var options4_3 = {eventType:'tap', content:'使用tap事件'};</code>
+			</pre>
+		</section>
+		<section>
+			<h3>5、事件</h3>
+			<a href="javascript:void(0)" id="dialog5_1">打开的时候触发</a>
+			<a href="javascript:void(0)" id="dialog5_2">关闭的时候触发</a>
+			<pre>
+				<code>
+var options5_1 = {onopen:function(){alert('在打开的时候触发')}};
+var options5_2 = {onclose:function(){alert('在关闭的时候触发')}};</code>
+			</pre>
+		</section>
 		<!--
 		<aside class="zdialog">
 			<div class="zdialog-layer"></div>
 			<div class="zdialog-content">
-				<div class="zdialog-message">请输入正确的手机格式</div>
+				<div class="zdialog-message">提示信息</div>
 				<button type="button" class="btn btn-primary">确定</button>
 				<button type="button" class="btn">取消</button>
 			</div>
@@ -27,23 +90,86 @@
 		<script>
 		Zepto(function($) {
 			//1
-			$('#dialog1').click(function() {
-				var ok1Fn = function() {
-					alert('click确定按钮');
-				};
-				var cancel1Fn = function() {
-					dialog1.close();
-				};
-				var dialog1 = zDialog.getzDialog({ok:ok1Fn, cancel:cancel1Fn, content:'信息内容'});
-				dialog1.open();
+			$('#dialog1_1').click(function() {
+				var options1_1 = {content:'这是弹框文本内容'};
+				var dialog = zDialog.getzDialog(options1_1);
+				dialog.open();
+			});
+			$('#dialog1_2').click(function() {
+				var options1_2 = {content:'<p style="color:red">这是标签内容</p>'};
+				var dialog = zDialog.getzDialog(options1_2);
+				dialog.open();
+			});
+			
+			//2
+			$('#dialog2_1').click(function() {
+				var options2_1 = {left:'20%', right:'20%'};
+				var dialog = zDialog.getzDialog(options2_1);
+				dialog.open();
+			});
+			$('#dialog2_2').click(function() {
+				var options2_2 = {top:'20%'};
+				var dialog = zDialog.getzDialog(options2_2);
+				dialog.open();
+			});
+			$('#dialog2_3').click(function() {
+				var options2_3 = {fixed:true};
+				var dialog = zDialog.getzDialog(options2_3);
+				dialog.open();
+			});
+			
+			//3
+			$('#dialog3_1').click(function() {
+				var okFn = function(){alert('点击出现确定')};
+				var options3_1 = {ok:okFn, okValue:'点击出现确定', okCSS:'btn'};
+				var dialog = zDialog.getzDialog(options3_1);
+				dialog.open();
+			});
+			$('#dialog3_2').click(function() {
+				var cancelFn = function(){dialog.close()};
+				var options3_2 = {cancel:cancelFn, cancelValue:'点击关闭弹框', cancelCSS:'btn btn-primary'};
+				var dialog = zDialog.getzDialog(options3_2);
+				dialog.open();
+			});
+			$('#dialog3_3').click(function() {
+				var btns = [
+					{value:'按钮1',callback:function(){alert('按钮1')},css:'btn btn-success'},
+					{value:'按钮2',callback:function(){alert('按钮2')},css:'btn btn-warning'}
+				];
+				var options3_3 = {buttons:btns};
+				var dialog = zDialog.getzDialog(options3_3);
+				dialog.open();
+			});
+			
+			//4
+			$('#dialog4_1').click(function() {
+				var options4_1 = {quickClose:false, content:'点击外面关闭不了了'};
+				var dialog = zDialog.getzDialog(options4_1);
+				dialog.open();
+			});
+			$('#dialog4_2').click(function() {
+				var options4_2 = {opacity:0.2, content:'阴影变淡了'};
+				var dialog = zDialog.getzDialog(options4_2);
+				dialog.open();
+			});
+			$('#dialog4_3').click(function() {
+				var options4_3 = {eventType:'tap', content:'使用tap事件'};
+				var dialog = zDialog.getzDialog(options4_3);
+				dialog.open();
+			});
+			
+			//5
+			$('#dialog5_1').click(function() {
+				var options5_1 = {onopen:function(){alert('在打开的时候触发')}};
+				var dialog = zDialog.getzDialog(options5_1);
+				dialog.open();
+			});
+			$('#dialog5_2').click(function() {
+				var options5_2 = {onclose:function(){alert('在关闭的时候触发')}};
+				var dialog = zDialog.getzDialog(options5_2);
+				dialog.open();
 			});
 		});
-			
-			
-			
-			//var dialog2 = zDialog.getzDialog({ok:ok1Fn, cancel:cancel1Fn});
-			
-			//
 		</script>
 	</body>
 </html>
