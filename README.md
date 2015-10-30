@@ -5,6 +5,7 @@
 - 可以与zepto的扩展库touch.js配合;
 - resource中的图片文件就一张二维码图片，仅仅用于扫描
 - styles/demo.css文件仅仅是页面布局CSS
+- 就200多行代码，对于不符合使用项目的部分，可随意修改
 
 ## 移动端展示
 ![二维码](http://pwstrick.github.io/zDialog/resource/qrcode1.png) 
@@ -252,3 +253,4 @@ var islider = new zDialog();
 ## 联系我
 对zDialog的使用有任何问题,或者发现bug,欢迎给我反馈：
 [提交反馈](https://github.com/pwstrick/zDialog/issues/new)
+
