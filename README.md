@@ -90,8 +90,8 @@ var islider = new zDialog();
         <td>buttonContainer</td>
         <td>{string}</td>
         <td>'.zdialog-content'</td>
-        <td>按钮列表的选择器
-        默认值和contentContainer一样
+        <td>按钮列表的选择器<br/>
+        默认值和contentContainer一样<br/>
         因为默认模版的按钮就是主题部分的直接子元素</td>
     </tr>
     <tr>
@@ -153,10 +153,10 @@ var islider = new zDialog();
         <td>{boolean}
         {function}</td>
         <td>false</td>
-        <td>确定按钮
-        可设置回调函数，false就是不显示
-        默认触发事件后会关闭框
-        如果是回调函数返回的是false，
+        <td>确定按钮<br/>
+        可设置回调函数，false就是不显示<br/>
+        默认触发事件后会关闭框<br/>
+        如果是回调函数返回的是false，<br/>
         就会阻止关闭
         </td>
     </tr>
@@ -177,10 +177,10 @@ var islider = new zDialog();
         <td>{boolean}
         {function}</td>
         <td>false</td>
-        <td>取消按钮
-        可设置回调函数，false就是不显示
-        默认触发事件后会关闭框
-        如果是回调函数返回的是false，
+        <td>取消按钮<br/>
+        可设置回调函数，false就是不显示<br/>
+        默认触发事件后会关闭框<br/>
+        如果是回调函数返回的是false，<br/>
         就会阻止关闭
         </td>
     </tr>
