@@ -262,3 +262,8 @@ var islider = new zDialog();
 对zDialog的使用有任何问题,或者发现bug,欢迎给我反馈：
 [提交反馈](https://github.com/pwstrick/zDialog/issues/new)
 
+## License (MIT)
+
+Copyright (c) 2015 pwstrick
+
+[MIT](https://github.com/pwstrick/zDialog/blob/master/LICENSE)
