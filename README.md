@@ -6,6 +6,9 @@
 - resource中的图片文件就一张二维码图片，仅仅用于扫描
 - styles/demo.css文件仅仅是页面布局CSS
 - 就200多行代码，对于不符合使用项目的部分，可随意修改
+- 下图是这个弹框的款式
+
+![demo](http://pwstrick.github.io/zDialog/resource/demo.jpg)
 
 ## 移动端展示
 ![二维码](http://pwstrick.github.io/zDialog/resource/qrcode1.png) 
@@ -87,9 +90,9 @@ var islider = new zDialog();
         <td>buttonContainer</td>
         <td>{string}</td>
         <td>'.zdialog-content'</td>
-        <td>按钮列表的选择器
-        默认值和contentContainer一样
-        因为默认模版的按钮就是主题部分的直接子元素</td>
+        <td>按钮列表的选择器<br/>
+        默认值和contentContainer一样<br/>
+        默认的按钮就是主题部分的直接子元素</td>
     </tr>
     <tr>
         <td>layerContainer</td>
@@ -150,9 +153,11 @@ var islider = new zDialog();
         <td>{boolean}
         {function}</td>
         <td>false</td>
-        <td>确定按钮，可设置回调函数，false就是不显示。
-        默认触发事件后会关闭框。
-        如果是回调函数返回的是false，就会阻止关闭
+        <td>确定按钮<br/>
+        可设置回调函数，false就是不显示<br/>
+        默认触发事件后会关闭框<br/>
+        如果是回调函数返回的是false，<br/>
+        就会阻止关闭
         </td>
     </tr>
     <tr>
@@ -172,9 +177,11 @@ var islider = new zDialog();
         <td>{boolean}
         {function}</td>
         <td>false</td>
-        <td>取消按钮，可设置回调函数，false就是不显示。
-        默认触发事件后会关闭框。
-        如果是回调函数返回的是false，就会阻止关闭
+        <td>取消按钮<br/>
+        可设置回调函数，false就是不显示<br/>
+        默认触发事件后会关闭框<br/>
+        如果是回调函数返回的是false，<br/>
+        就会阻止关闭
         </td>
     </tr>
     <tr>
@@ -224,7 +231,8 @@ var islider = new zDialog();
         <td>eventType</td>
         <td>{string}</td>
         <td>'click'</td>
-        <td>点击类型，如果配合touch.js，可以设置为tap类型</td>
+        <td>点击类型
+        如果配合touch.js，可以设置为tap类型</td>
     </tr>
     <tr>
         <td>debug</td>
