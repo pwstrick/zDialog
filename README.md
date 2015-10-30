@@ -138,7 +138,8 @@ var islider = new zDialog();
         <td>ok</td>
         <td>{boolean|function}</td>
         <td>false</td>
-        <td>确定按钮，可设置回调函数，false就是不显示。默认触发事件后会关闭框。
+        <td>确定按钮，可设置回调函数，false就是不显示。
+        默认触发事件后会关闭框。
         如果是回调函数返回的是false，就会阻止关闭
         </td>
     </tr>
