@@ -1,5 +1,5 @@
 # zDialog
-弹出框插件
+移动端弹出框插件
 
 - 基于zepto.js;
 - 可以与zepto的扩展库touch.js配合;
