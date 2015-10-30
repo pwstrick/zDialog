@@ -37,7 +37,8 @@ var islider = new zDialog();
 ```
 
 #### zDialog默认模版
-
+模版是可以自定义的，配合CSS，如果自定义了的话，就得在容器配置中重新配置各个参数。
+总共有5个参数，分别对应各个位置，最外层位置、主题位置、阴影位置、消息信息位置和按钮位置
 ``` html
 <aside class="zdialog">
 	<div class="zdialog-layer"></div>
@@ -60,9 +61,32 @@ var islider = new zDialog();
 </thead>
 <tbody>
     <tr>
-        <td>duration</td>
-        <td>{number}</td>
-        <td>单位:毫秒，在自动播放模式中，设置每个场景的停留时间</td>
+        <td colspan="3">容器配置</td>
+    </tr>
+    <tr>
+        <td>container</td>
+        <td>{string}</td>
+        <td>最外部的选择器，默认就是模版中的'.zdialog'</td>
+    </tr>
+    <tr>
+        <td>contentContainer</td>
+        <td>{string}</td>
+        <td>主题部分的选择器，默认就是模版中的'.zdialog-content'</td>
+    </tr>
+    <tr>
+        <td>messageContainer</td>
+        <td>{string}</td>
+        <td>消息信息的选择器，默认就是模版中的'.zdialog-message'</td>
+    </tr>
+    <tr>
+        <td>buttonContainer</td>
+        <td>{string}</td>
+        <td>按钮列表的选择器，默认就是模版中的'.zdialog-content'，因为默认模版的按钮就是主题部分的直接子元素</td>
+    </tr>
+    <tr>
+        <td>layerContainer</td>
+        <td>{string}</td>
+        <td>阴影背景的选择器，默认就是模版中的'.zdialog-layer'</td>
     </tr>
 </tbody>
 </table>
