@@ -7,8 +7,7 @@
 - styles/demo.css文件仅仅是页面布局CSS
 
 ## 移动端展示
-
-
+![二维码](http://pwstrick.github.io/zDialog/resource/qrcode.png) 
 Demo [http://pwstrick.github.io/zDialog](http://pwstrick.github.io/zDialog)
 
 ## 开始使用 zDialog
