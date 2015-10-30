@@ -92,7 +92,7 @@ var islider = new zDialog();
         <td>'.zdialog-content'</td>
         <td>按钮列表的选择器<br/>
         默认值和contentContainer一样<br/>
-        因为默认模版的按钮就是主题部分的直接子元素</td>
+        默认的按钮就是主题部分的直接子元素</td>
     </tr>
     <tr>
         <td>layerContainer</td>
