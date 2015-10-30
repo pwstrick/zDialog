@@ -56,87 +56,103 @@ var islider = new zDialog();
     <tr>
         <td>选项</td>
         <td>类型</td>
+        <td>默认值</td>
         <td>说明</td>
     </tr>
 </thead>
 <tbody>
     <tr>
-        <td colspan="3">容器配置</td>
+        <td colspan="4">容器配置</td>
     </tr>
     <tr>
         <td>container</td>
         <td>{string}</td>
-        <td>最外部的选择器，默认就是模版中的'.zdialog'</td>
+        <td>'.zdialog'</td>
+        <td>最外部的选择器</td>
     </tr>
     <tr>
         <td>contentContainer</td>
         <td>{string}</td>
-        <td>主题部分的选择器，默认就是模版中的'.zdialog-content'</td>
+        <td>'.zdialog-content'</td>
+        <td>主题部分的选择器</td>
     </tr>
     <tr>
         <td>messageContainer</td>
         <td>{string}</td>
-        <td>消息信息的选择器，默认就是模版中的'.zdialog-message'</td>
+        <td>'.zdialog-message'</td>
+        <td>消息信息的选择器</td>
     </tr>
     <tr>
         <td>buttonContainer</td>
         <td>{string}</td>
-        <td>按钮列表的选择器，默认就是模版中的'.zdialog-content'
+        <td>'.zdialog-content'</td>
+        <td>按钮列表的选择器，默认值和contentContainer一样
         因为默认模版的按钮就是主题部分的直接子元素</td>
     </tr>
     <tr>
         <td>layerContainer</td>
         <td>{string}</td>
-        <td>阴影背景的选择器，默认就是模版中的'.zdialog-layer'</td>
+        <td>'.zdialog-layer'</td>
+        <td>阴影背景的选择器</td>
     </tr>
     <tr>
-        <td colspan="3">内容配置</td>
+        <td colspan="4">内容配置</td>
     </tr>
     <tr>
         <td>content</td>
         <td>{string}</td>
+        <td></td>
         <td>消息内容，可以输入html标签</td>
     </tr>
     <tr>
-        <td colspan="3">外观配置</td>
+        <td colspan="4">外观配置</td>
     </tr>
     <tr>
         <td>left</td>
         <td>{string|number}</td>
-        <td>默认设置'5%'，消息主体向左浮动距离</td>
+        <td>'5%'</td>
+        <td>消息主体向左浮动距离</td>
     </tr>
     <tr>
         <td>right</td>
         <td>{string|number}</td>
-        <td>默认设置'5%'，消息主体向右浮动距离</td>
+        <td>'5%'</td>
+        <td>消息主体向右浮动距离</td>
     </tr>
     <tr>
         <td>top</td>
         <td>{string|number}</td>
-        <td>默认设置null，消息主体向上浮动距离</td>
+        <td>null</td>
+        <td>消息主体向上浮动距离</td>
     </tr>
     <tr>
         <td>fixed</td>
         <td>{boolean}</td>
-        <td>默认设置false，消息主体浮动类型设置为：position:fixed</td>
+        <td>false</td>
+        <td>消息主体浮动类型设置为：position:fixed</td>
     </tr>
     <tr>
-        <td colspan="3">按钮配置</td>
+        <td colspan="4">按钮配置</td>
     </tr>
     <tr>
         <td>ok</td>
         <td>{boolean|function}</td>
-        <td>确定按钮，可设置回调函数，默认设置false，不显示。</td>
+        <td>false</td>
+        <td>确定按钮，可设置回调函数，false就是不显示。默认触发事件后会关闭框。
+        如果是回调函数返回的是false，就会阻止关闭
+        </td>
     </tr>
     <tr>
         <td>okValue</td>
         <td>{string}</td>
-        <td>按钮文字，默认设置确定</td>
+        <td>'确定'</td>
+        <td>按钮文字</td>
     </tr>
     <tr>
         <td>okCSS</td>
         <td>{string}</td>
-        <td>确定按钮样式，默认设置'btn btn-primary'</td>
+        <td>'btn btn-primary'</td>
+        <td>确定按钮样式</td>
     </tr>
 </tbody>
 </table>
