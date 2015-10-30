@@ -1,4 +1,4 @@
-# zdialog
+# zDialog
 弹出框插件
 
 - 基于zepto.js;
@@ -10,6 +10,9 @@
 ![二维码](http://pwstrick.github.io/zdialog/resource/qrcode.png) 
 
 Demo [http://pwstrick.github.io/zdialog](http://pwstrick.github.io/zdialog)
+
+## 开始使用 zDialog
+
 
 <table width="100%">
   <thead>
