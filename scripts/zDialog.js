@@ -6,6 +6,7 @@
  */
 ;(function($, global){
 	'use strict';
+	
 	var _zDialog = null;
 	/**
 	 * $('xxx').zDialog()格式

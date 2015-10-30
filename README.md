@@ -1,10 +1,36 @@
-# zdialog
+# zDialog
 弹出框插件
 
-<p>基于zepto.js</p>
-<p>如果要添加手势操作，可引入zepto的扩展库touch.js</p>
-<p>resource中的图片文件仅仅是演示用，正式使用插件的时候可以不需要</p>
-<p>styles/demo.css文件仅仅是页面布局CSS</p>
-<a href="http://pwstrick.github.io/zdialog/" target="_blank">点击查看在线demo</a>
-<p>手机可直接扫描下面二维码查看demo</p>
+- 基于zepto.js;
+- 可以与zepto的扩展库touch.js配合;
+- resource中的图片文件就一张二维码图片，仅仅用于扫描
+- styles/demo.css文件仅仅是页面布局CSS
+
+## 移动端展示
 ![二维码](http://pwstrick.github.io/zdialog/resource/qrcode.png) 
+
+Demo [http://pwstrick.github.io/zdialog](http://pwstrick.github.io/zdialog)
+
+## 开始使用 zDialog
+
+
+<table width="100%">
+  <thead>
+    <tr>
+        <th width="20%">参数</th>
+        <th width="20%">取值</th>
+        <th width="60%">简介</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+        <td>Foo</td>
+        <td>Foo</td>
+        <td>Foo</td>
+    </tr>
+ </tbody>
+</table>
+<pre>
+  <code>
+  </code>
+</pre>
