@@ -81,12 +81,62 @@ var islider = new zDialog();
     <tr>
         <td>buttonContainer</td>
         <td>{string}</td>
-        <td>按钮列表的选择器，默认就是模版中的'.zdialog-content'，因为默认模版的按钮就是主题部分的直接子元素</td>
+        <td>按钮列表的选择器，默认就是模版中的'.zdialog-content'
+        因为默认模版的按钮就是主题部分的直接子元素</td>
     </tr>
     <tr>
         <td>layerContainer</td>
         <td>{string}</td>
         <td>阴影背景的选择器，默认就是模版中的'.zdialog-layer'</td>
+    </tr>
+    <tr>
+        <td colspan="3">内容配置</td>
+    </tr>
+    <tr>
+        <td>content</td>
+        <td>{string}</td>
+        <td>消息内容，可以输入html标签</td>
+    </tr>
+    <tr>
+        <td colspan="3">外观配置</td>
+    </tr>
+    <tr>
+        <td>left</td>
+        <td>{string|number}</td>
+        <td>默认设置'5%'，消息主体向左浮动距离</td>
+    </tr>
+    <tr>
+        <td>right</td>
+        <td>{string|number}</td>
+        <td>默认设置'5%'，消息主体向右浮动距离</td>
+    </tr>
+    <tr>
+        <td>top</td>
+        <td>{string|number}</td>
+        <td>默认设置null，消息主体向上浮动距离</td>
+    </tr>
+    <tr>
+        <td>fixed</td>
+        <td>{boolean}</td>
+        <td>默认设置false，消息主体浮动类型设置为：position:fixed</td>
+    </tr>
+    <tr>
+        <td colspan="3">按钮配置</td>
+    </tr>
+    <tr>
+        <td>ok</td>
+        <td>{boolean|function}</td>
+        <td>确定按钮，可设置回调函数，默认设置false，不显示。</td>
+    </tr>
+    <tr>
+        <td>okValue</td>
+        <td>{string}</td>
+        <td>按钮文字，默认设置确定</td>
+    </tr>
+    <tr>
+        <td>okCSS</td>
+        <td>{string}</td>
+        <td>确定按钮样式，默认设置'btn btn-primary'</td>
     </tr>
 </tbody>
 </table>
