@@ -106,6 +106,12 @@ var islider = new zDialog();
         <td>消息内容，可以输入html标签</td>
     </tr>
     <tr>
+        <td>template</td>
+        <td>{string}</td>
+        <td>见前文</td>
+        <td>模版内容</td>
+    </tr>
+    <tr>
         <td colspan="4"><b>外观配置</b></td>
     </tr>
     <tr>
@@ -187,14 +193,58 @@ var islider = new zDialog();
         <td>{array}</td>
         <td>[]</td>
         <td>自定义按钮数组
+        <pre>
         [
           {
              value:按钮内容,
              callback:回调函数,
              css:按钮样式
           }
-        ]
+        ]</pre>
         </td>
+    </tr>
+    <tr>
+        <td colspan="4"><b>交互配置</b></td>
+    </tr>
+    <tr>
+        <td>quickClose</td>
+        <td>{boolean}</td>
+        <td>true</td>
+        <td>快速关闭，点击空白处关闭</td>
+    </tr>
+    <tr>
+        <td>opacity</td>
+        <td>{number}
+        {boolean}</td>
+        <td>0.6</td>
+        <td>阴影透明度，false就是完全透明</td>
+    </tr>
+    <tr>
+        <td>eventType</td>
+        <td>{string}</td>
+        <td>'click'</td>
+        <td>点击类型，如果配合touch.js，可以设置为tap类型</td>
+    </tr>
+    <tr>
+        <td>debug</td>
+        <td>{boolean}</td>
+        <td>false</td>
+        <td>开启或关闭调试</td>
+    </tr>
+    <tr>
+        <td colspan="4"><b>事件配置</b></td>
+    </tr>
+    <tr>
+        <td>onopen</td>
+        <td>{function}</td>
+        <td>function(){}</td>
+        <td>打开弹出框的时候触发</td>
+    </tr>
+    <tr>
+        <td>onclose</td>
+        <td>{function}</td>
+        <td>function(){}</td>
+        <td>关闭事件的时候触发</td>
     </tr>
 </tbody>
 </table>
