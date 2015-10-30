@@ -62,7 +62,7 @@ var islider = new zDialog();
 </thead>
 <tbody>
     <tr>
-        <td colspan="4">容器配置</td>
+        <td colspan="4"><b>容器配置</b></td>
     </tr>
     <tr>
         <td>container</td>
@@ -86,7 +86,8 @@ var islider = new zDialog();
         <td>buttonContainer</td>
         <td>{string}</td>
         <td>'.zdialog-content'</td>
-        <td>按钮列表的选择器，默认值和contentContainer一样
+        <td>按钮列表的选择器
+        默认值和contentContainer一样
         因为默认模版的按钮就是主题部分的直接子元素</td>
     </tr>
     <tr>
@@ -96,7 +97,7 @@ var islider = new zDialog();
         <td>阴影背景的选择器</td>
     </tr>
     <tr>
-        <td colspan="4">内容配置</td>
+        <td colspan="4"><b>内容配置</b></td>
     </tr>
     <tr>
         <td>content</td>
@@ -105,23 +106,26 @@ var islider = new zDialog();
         <td>消息内容，可以输入html标签</td>
     </tr>
     <tr>
-        <td colspan="4">外观配置</td>
+        <td colspan="4"><b>外观配置</b></td>
     </tr>
     <tr>
         <td>left</td>
-        <td>{string|number}</td>
+        <td>{string}
+        {number}</td>
         <td>'5%'</td>
         <td>消息主体向左浮动距离</td>
     </tr>
     <tr>
         <td>right</td>
-        <td>{string|number}</td>
+        <td>{string}
+        {number}</td>
         <td>'5%'</td>
         <td>消息主体向右浮动距离</td>
     </tr>
     <tr>
         <td>top</td>
-        <td>{string|number}</td>
+        <td>{string}
+        {number}</td>
         <td>null</td>
         <td>消息主体向上浮动距离</td>
     </tr>
@@ -132,11 +136,12 @@ var islider = new zDialog();
         <td>消息主体浮动类型设置为：position:fixed</td>
     </tr>
     <tr>
-        <td colspan="4">按钮配置</td>
+        <td colspan="4"><b>按钮配置</b></td>
     </tr>
     <tr>
         <td>ok</td>
-        <td>{boolean|function}</td>
+        <td>{boolean}
+        {function}</td>
         <td>false</td>
         <td>确定按钮，可设置回调函数，false就是不显示。
         默认触发事件后会关闭框。
@@ -153,7 +158,39 @@ var islider = new zDialog();
         <td>okCSS</td>
         <td>{string}</td>
         <td>'btn btn-primary'</td>
-        <td>确定按钮样式</td>
+        <td>按钮的样式</td>
+    </tr>
+    <tr>
+        <td>cancel</td>
+        <td>{boolean}
+        {function}</td>
+        <td>false</td>
+        <td>取消按钮，可设置回调函数，false就是不显示。
+        默认触发事件后会关闭框。
+        如果是回调函数返回的是false，就会阻止关闭
+        </td>
+    </tr>
+    <tr>
+        <td>cancelValue</td>
+        <td>{string}</td>
+        <td>'取消'</td>
+        <td>按钮文字</td>
+    </tr>
+    <tr>
+        <td>cancelCSS</td>
+        <td>{string}</td>
+        <td>'btn'</td>
+        <td>按钮的样式</td>
+    </tr>
+    <tr>
+        <td>buttons</td>
+        <td>{array}</td>
+        <td>[]</td>
+        <td>自定义按钮数组
+        [
+          {value:按钮内容, callback:回调函数, css:按钮样式}
+        ]
+        </td>
     </tr>
 </tbody>
 </table>
