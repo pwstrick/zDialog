@@ -8,6 +8,7 @@
 
 ## 移动端展示
 ![二维码](http://pwstrick.github.io/zDialog/resource/qrcode1.png) 
+
 Demo [http://pwstrick.github.io/zDialog](http://pwstrick.github.io/zDialog)
 
 ## 开始使用 zDialog
