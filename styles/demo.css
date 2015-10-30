@@ -5,7 +5,7 @@ html {
   	-ms-touch-action: none;/*禁止winphone默认触摸事件*/
 }
 body {
-  	margin:0 10px;line-height:1.4;color:#333;
+  	margin:10px;line-height:1.4;color:#333;
   	font-family:'arial,Helvetica';
   	-webkit-user-select: none;/*禁止ios和android用户选中文字*/
   	-webkit-touch-callout: none;/*禁止ios 长按时不触发系统的菜单，禁止ios&android长按时下载图片*/
@@ -122,4 +122,9 @@ h4,.h4,h5,.h5,h6,.h6 {
 }
 h1,.h1 {font-size: 22px;}h2,.h2 {font-size: 20px;}h3,.h3 {font-size: 18px;}
 h4,.h4 {font-size: 16px;}h5,.h5 {font-size: 14px;}h6,.h6 {font-size: 12px;}
+
+section{margin-bottom:30px;}
+a{color:#337ab7;margin-right:20px;}
+pre{background:#666;color:#FFF;padding:0 20px;font-size:14px;}
+pre code{margin:0;}
 
