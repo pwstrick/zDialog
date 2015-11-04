@@ -17,7 +17,7 @@ Demo [http://pwstrick.github.io/zDialog](http://pwstrick.github.io/zDialog)
 
 ## 开始使用 zDialog
 
-使用zDialog最简单的办法是查阅我们提供的简易例子，请浏览index.html的内容
+使用zDialog最简单的办法是查阅我提供的简易例子，请浏览index.html的内容
 
 #### 载入zDialog
 
